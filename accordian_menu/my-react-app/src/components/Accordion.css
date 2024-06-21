@@ -1,0 +1,39 @@
+.accordion {
+    margin: 0 auto;
+    width: 80%;
+
+  }
+  
+  .accordion-header {
+    background-color: #224775;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    transition: border-radius 0.3s ease;
+  }
+  
+  .accordion-header.open {
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .accordion-icon {
+    font-size: 24px;
+  }
+  
+  .product-list-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
