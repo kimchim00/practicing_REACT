@@ -4,7 +4,9 @@ import Logo from "../../assets/logo.svg"
 
 const Sidebar = () => {
     return (
+        <>
         <aside className="aside">
+
             <a href="#home" className="nav__logo">
                 <img src={Logo}  alt="" />
             </a>
@@ -20,24 +22,47 @@ const Sidebar = () => {
                         </li>
 
                         <li className="nav__item">
-                            <a href="" className="nav__link"></a>
+                            <a href="#about" className="nav__link">
+                                <i className="icon-user-following"></i>
+                            </a>
                         </li>
 
                         <li className="nav__item">
-                            <a href="" className="nav__link"></a>
+                            <a href="#services" className="nav__link">
+                                <i className="icon-briefcase"></i>
+                            </a>
                         </li>
 
                         <li className="nav__item">
-                            <a href="" className="nav__link"></a>
+                            <a href="#resume" className="nav__link">
+                                <i className="icon-graduation"></i>
+                            </a>
                         </li>
 
                         <li className="nav__item">
-                            <a href="" className="nav__link"></a>
+                            <a href="#portfolio" className="nav__link">
+                                <i className="icon-layers"></i>
+                            </a>
                         </li>
+
+
+                       
+
                     </ul>
                 </div>
             </nav>
+
+            <div className="nav__footer">
+                <span className="copyright">
+                &copy; KMZ
+                </span>
+            </div>
         </aside>
+
+        <div className="nav__toggle">
+            <i className="icon-menu"></i>
+        </div>
+        </>
     )
 }
 
