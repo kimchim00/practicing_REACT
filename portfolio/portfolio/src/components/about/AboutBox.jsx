@@ -1,37 +1,41 @@
-import React from "react";
 
+import React from "react";
+import {
+  AboutBoxes,
+  AboutBoxWrapper,
+  AboutIcon,
+  AboutTitle,
+  AboutSubtitle,
+} from "./AboutStyles";
 
 const AboutBox = () => {
-    return (
-        <div className="about__boxes grid">
-            <div className="about__box">
-                <i className="about__icon icon-fire"></i>
-
-                <div>
-                    <h3 className="about__title">3</h3>
-                    <span className="about__subtitle">Project Completed</span>
-                </div>
-            </div>
-
-            <div className="about__box">
-                <i className="about__icon icon-cup"></i>
-
-                <div>
-                    <h3 className="about__title">1386</h3>
-                    <span className="about__subtitle">Cup of Coffee </span>
-                </div>
-            </div>
-
-            <div className="about__box">
-                <i className="about__icon icon-emotsmile"></i>
-
-                <div>
-                    <h3 className="about__title">4</h3>
-                    <span className="about__subtitle">Satisfied Clients</span>
-                </div>
-            </div>
+  return (
+    <AboutBoxes>
+      <AboutBoxWrapper>
+        <AboutIcon className="icon-fire" />
+        <div>
+          <AboutTitle>3</AboutTitle>
+          <AboutSubtitle>Project Completed</AboutSubtitle>
         </div>
-    )
-}
+      </AboutBoxWrapper>
 
-export default AboutBox
+      <AboutBoxWrapper>
+        <AboutIcon className="icon-cup" />
+        <div>
+          <AboutTitle>1386</AboutTitle>
+          <AboutSubtitle>Cup of Coffee</AboutSubtitle>
+        </div>
+      </AboutBoxWrapper>
+
+      <AboutBoxWrapper>
+        <AboutIcon className="icon-emotsmile" />
+        <div>
+          <AboutTitle>4</AboutTitle>
+          <AboutSubtitle>Satisfied Clients</AboutSubtitle>
+        </div>
+      </AboutBoxWrapper>
+    </AboutBoxes>
+  );
+};
+
+export default AboutBox;

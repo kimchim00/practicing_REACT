@@ -3,7 +3,16 @@ import "./Testimonials.css"
 
 const Testimonials = () => {
     return (
-        <div>Testimonials</div>
+        <section className="tesmonials container section">
+            <h2 className="section__title">
+                CLIENTS & REVIEWS
+            </h2>
+
+            <div className="testimonials__container grid">
+                
+            </div>
+        </section>
+
     )
 }
 
