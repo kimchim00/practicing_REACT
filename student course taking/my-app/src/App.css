@@ -1,0 +1,60 @@
+/* App.css */
+
+
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+  
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2e6d7e;
+  font-weight: bold;
+}
+
+.modules-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.module {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+}
+
+.module h2 {
+  font-size: 1.8rem;
+  color: #2e6d7e;
+  margin-bottom: 20px;
+}
+
+.module p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .modules-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .module {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

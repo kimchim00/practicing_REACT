@@ -1,0 +1,71 @@
+{
+  "students": [
+    {
+      "id": "2",
+      "firstName": "Sara",
+      "lastName": "Karimi",
+      "studentNumber": "S002",
+      "major": "Mathematics"
+    },
+    {
+      "id": "d1a8",
+      "firstName": "kimia",
+      "lastName": "mashhadizadeh",
+      "studentNumber": "400405071",
+      "major": "computer science"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Data Structures",
+      "code": "CS101",
+      "credits": 3,
+      "instructorId": 1
+    },
+    {
+      "id": "2",
+      "name": "Calculus I",
+      "code": "MATH101",
+      "credits": 4,
+      "instructorId": 2
+    }
+  ],
+  "instructors": [
+    {
+      "id": "1",
+      "firstName": "Dr. John",
+      "lastName": "Smith",
+      "employeeNumber": "I001",
+      "coursesTaught": [
+        "CS101"
+      ]
+    },
+    {
+      "id": "2",
+      "firstName": "Dr. Emily",
+      "lastName": "Johnson",
+      "employeeNumber": "I002",
+      "coursesTaught": [
+        "MATH101"
+      ]
+    }
+  ],
+  "enrollments": [
+    {
+      "studentId": 1,
+      "courses": [
+        "CS101",
+        "MATH101"
+      ],
+      "id": "3898"
+    },
+    {
+      "studentId": 2,
+      "courses": [
+        "MATH101"
+      ],
+      "id": "2b79"
+    }
+  ]
+}
